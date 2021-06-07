@@ -9,26 +9,21 @@ import android.telecom.Call;
 import android.widget.TextView;
 
     public class MainActivity extends AppCompatActivity {
-
+  RecyclerView recyclerView;
+  VillanosAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getDatos(this);
+         recyclerView = findViewById(R.id.recycle);
+         getDatos(this);
+
 
     }
 
-        private void getDatos(Context context) {
-        /*
-        Retrofit retrofit = new ApiAdapter().getDatosServidor();
-        ApiService service = retrofit.create(ApiService.class);
-
-        Call.<RespuestaServisdor> call = service.getDatos();
-
-        call.enqueue(new Call.Callback<RespuestaServisdor>()
-
-*/
-        }
+    private void getDatos(Context context){
+        
+    }
 
     }
