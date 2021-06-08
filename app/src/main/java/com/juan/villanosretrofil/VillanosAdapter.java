@@ -38,10 +38,15 @@ public class VillanosAdapter extends RecyclerView.Adapter<VillanosAdapter.Villan
     @Override
     public void onBindViewHolder(@NonNull @NotNull VillanosHolder holder, int position) {
         Villanos villanos = listaVillanos.get(position);
+        holder.txt_id.setText(villanos.getId());
         holder.txtNombreVillano.setText(villanos.getNombre());
+        holder.txtPoder.setText(villanos.getPoderes());
+       holder.txt_pelicula.setText(villanos.getPelicula());
+
+
         String imagenUrl = "https://apcpruebas.es/imagenes/" + villanos.getImagen();
 
-        Glide.with(context).load(imagenUrl).placeholder(R.drawable.tanos1).into(holder.imgVillano);
+        Glide.with(context).load(imagenUrl).placeholder(R.drawable.sombra).into(holder.imgVillano);
     }
 
     @Override
@@ -51,12 +56,18 @@ public class VillanosAdapter extends RecyclerView.Adapter<VillanosAdapter.Villan
 
     class VillanosHolder extends RecyclerView.ViewHolder{
         ImageView imgVillano;
+        TextView txt_id;
         TextView txtNombreVillano;
+        TextView txtPoder;
+        TextView txt_pelicula;
 
         public VillanosHolder(@NonNull View itenView) {
             super(itenView);
             imgVillano = itenView.findViewById(R.id.imageView);
+            txt_id = itenView.findViewById(R.id.txt_id);
             txtNombreVillano = itenView.findViewById(R.id.txt_nombre);
+            txtPoder = itenView.findViewById(R.id.txt_poder);
+            txt_pelicula = itenView.findViewById(R.id.txt_pelicula);
 
         }
     }

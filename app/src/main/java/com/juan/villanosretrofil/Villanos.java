@@ -5,12 +5,14 @@ public class Villanos {
     private String nombre;
     private String poderes;
     private String imagen;
+    private  String pelicula;
 
-    public Villanos(String id, String nombre, String poderes, String imagen) {
+    public Villanos(String id, String nombre, String poderes, String imagen, String pelicula) {
         this.id = id;
         this.nombre = nombre;
         this.poderes = poderes;
         this.imagen = imagen;
+        this.pelicula = pelicula;
 
     }
 
@@ -44,5 +46,13 @@ public class Villanos {
 
     public void setImagen(String imagen) {
         this.imagen = imagen;
+    }
+
+    public String getPelicula() {
+        return pelicula;
+    }
+
+    public void setPelicula(String pelicula) {
+        this.pelicula = pelicula;
     }
 }
