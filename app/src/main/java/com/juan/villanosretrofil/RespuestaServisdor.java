@@ -6,17 +6,17 @@ public class RespuestaServisdor {
 private ArrayList<Villanos>mensaje;
 private int estado;
 
-    public RespuestaServisdor(ArrayList<Villanos> mensaje, int estado) {
-        this.mensaje = mensaje;
+    public RespuestaServisdor(ArrayList<Villanos> ListaVillanos, int estado) {
+        this.mensaje = ListaVillanos;
         this.estado = estado;
     }
 
-    public ArrayList<Villanos> getMensaje() {
+    public ArrayList<Villanos> getListaVillanos() {
         return mensaje;
     }
 
-    public void setMensaje(ArrayList<Villanos> mensaje) {
-        this.mensaje = mensaje;
+    public void setMensaje(ArrayList<Villanos> ListaVillanos) {
+        this.mensaje = ListaVillanos;
     }
 
     public int getEstado() {
