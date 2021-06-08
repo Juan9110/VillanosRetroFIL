@@ -41,8 +41,9 @@ import retrofit2.Retrofit;
 
                         Datos.setListaVillanos(response.body().getListaVillanos());
                         mostrarRecycler(context);
+
                     }else {
-                        Toast.makeText(MainActivity.this, "Fallo en el servidor", Toast.LENGTH_SHORT).show();;
+                        Toast.makeText(MainActivity.this, "Fallo en el servidor", Toast.LENGTH_SHORT).show();
 
                     }
                 }
@@ -54,13 +55,14 @@ import retrofit2.Retrofit;
                 Toast.makeText(MainActivity.this,"Comprueba tu dirreccion",Toast.LENGTH_SHORT).show();
 
 
-            }
-        });
-    }
+                   }
+              });
+           }
            public void mostrarRecycler(Context context){
-        adapter = new VillanosAdapter(Datos.getListaVillanos(), context);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+                adapter = new VillanosAdapter(Datos.getListaVillanos(), context);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
            }
 
-    }
+       }

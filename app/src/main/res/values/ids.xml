@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="txtNombreVillanoItem" type="id">NombreVillano</item>
-    <item name="imgVillano" type="id">Villano</item>
-</resources>

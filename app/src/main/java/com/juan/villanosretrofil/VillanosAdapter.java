@@ -55,8 +55,8 @@ public class VillanosAdapter extends RecyclerView.Adapter<VillanosAdapter.Villan
 
         public VillanosHolder(@NonNull View itenView) {
             super(itenView);
-            imgVillano = itenView.findViewById(R.id.imgVillano);
-            txtNombreVillano = itenView.findViewById(R.id.txtNombreVillanoItem);
+            imgVillano = itenView.findViewById(R.id.imageView);
+            txtNombreVillano = itenView.findViewById(R.id.txt_nombre);
 
         }
     }
